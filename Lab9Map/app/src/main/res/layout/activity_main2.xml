@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/shouLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:background="#cc4e5a6b"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/shouText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint=""/>
+        <TextView
+            android:layout_toRightOf="@+id/shouText"
+            android:id="@+id/shoutextshi"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="市"/>
+        <EditText
+            android:layout_toRightOf="@+id/shoutextshi"
+            android:id="@+id/shouaddressText"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint=""/>
+        <Button
+
+            android:layout_toRightOf="@+id/shouaddressText"
+            android:id="@+id/shouButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/markerLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#cc4e5a6b"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/latLngText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wating........"/>
+        <TextView
+            android:id="@+id/markerText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/latLngText"
+            android:textColor="#fff5eb"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

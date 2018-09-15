@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">测试地图</string>
+    <string name="traffic">实时交通模式</string>
+    <string name="normal">普通地图模式</string>
+    <string name="satellite">卫星地图模式</string>
+    <string name="mylocation">我的位置</string>
+</resources>
+
+
